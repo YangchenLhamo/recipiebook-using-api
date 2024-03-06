@@ -18,7 +18,7 @@ class RecipeCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => RecipeDetails()));
+            .push(MaterialPageRoute(builder: (context) => RecipeDetails(thumbnailUrl: thumbnailUrl, title: title,)));
       },
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
